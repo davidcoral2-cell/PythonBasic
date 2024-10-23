@@ -197,7 +197,7 @@ def r_sumar_lista():
     def crear_lista():
         i = []
         while True:
-            o = input('Escribe las letras a tu lista y pon "fin" para acabar: ')
+            o = input('Escribe los numeros a la lista y pon "fin" para acabar: ')
             if o.lower() == "fin":
                  break
             i.append(float(o))
@@ -215,7 +215,7 @@ def r_multi_lista():
     def crear_lista():
         i = []
         while True:
-            o = input('Escribe las letras a tu lista y pon "fin" para acabar: ')
+            o = input('Escribe los numeros a la lista y pon "fin" para acabar: ')
             if o.lower() == "fin":
                  break
             i.append(float(o))
