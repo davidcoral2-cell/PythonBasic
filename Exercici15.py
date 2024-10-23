@@ -12,8 +12,7 @@ def menu():
         print("7. De 3 numeros, ¿cual es mayor? ")
         print("8. Calcular longitud de una cadena ")
         print("9. Calcular longitud de una lista ")
-        print("10. ¿Esto es una vocal?")
-        print("11. Salir ")
+        print("10. Salir ")
         print("-------------------------")
         
         print("-------------------------")
