@@ -1,6 +1,6 @@
 def menu():
     op=0
-    while op < 1 or op > 10:
+    while op < 1 or op > 11:
     
         print("-------------------------")
         print("1. Sumar" )
@@ -16,7 +16,7 @@ def menu():
         print("11. Salir ")
         print("-------------------------")
         
-        
+
         print("-------------------------")
 
         op = int(input("Que operación quieres hacer? "))

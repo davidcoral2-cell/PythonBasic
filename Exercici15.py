@@ -221,8 +221,6 @@ while a:
         case 9:
             lista()
         case 10:
-            vocal()
-        case 11:
             print("Adios")
             a = False
         case _:
