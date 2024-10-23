@@ -142,7 +142,7 @@ while a:
         case 5:
             cdb()
         case 6:
-            print("Adeu")
+            print("Adios")
             a=False
         case _:
             error()
