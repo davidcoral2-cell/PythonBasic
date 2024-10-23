@@ -1,7 +1,7 @@
 
 def menu():
     op=0
-    while op>1 and op<5:
+    while op < 1 or op > 5:
     
         print("-------------------------")
         print("1. Sumar")
@@ -13,7 +13,7 @@ def menu():
         
         print("-------------------------")
 
-        op = input("Que operación quieres hacer? ")
+        op = int(input("Que operación quieres hacer? "))
 
 
         print("-------------------------")
@@ -81,10 +81,16 @@ def divi():
 
     print("-------------------------")
 
-    s = n1/n2
+    if n2 == 0:
+        print("No se puede dividir por cero.")
+    else:
+        s = n1 / n2
     print ("{} / {} = {}".format(n1, n2, s))
 
-
+def error():
+    print("-------------------------")
+    print("La opción no es valida ")
+    print("-------------------------")
 
 a = True
 while a:
@@ -102,8 +108,6 @@ while a:
             divi()
         case 5:
             print("Adeu")
-            f=False
+            a=False
         case _:
-            print("-------------------------")
-            print("La opción no es valida ")
-            print("-------------------------")
+            error()
