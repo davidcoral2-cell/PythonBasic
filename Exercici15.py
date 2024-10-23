@@ -184,6 +184,7 @@ def vocal():
             i.append(o)
         return i
     
+    
     letras = listavocales()
 
     for letra in letras:
