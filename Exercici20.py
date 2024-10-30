@@ -1,7 +1,7 @@
 
 def menu():
     op=0
-    while op < 1 or op > 15:
+    while op < 1 or op > 16:
     
         print("-------------------------")
         print("1. Sumar" )
@@ -13,12 +13,13 @@ def menu():
         print("7. De 3 numeros, ¿cual es mayor? ")
         print("8. Calcular longitud de una cadena ")
         print("9. Calcular longitud de una lista ")
-        print("10. ¿Esto es una vocal?")
+        print("10. ¿Esto es una vocal? ")
         print("11. Sumar lista ")
         print("12. Multiplicar lista ")
-        print("13. Invertir texto")
-        print("14. Encontrar palindromos")
-        print("15. Salir ")
+        print("13. Invertir texto ")
+        print("14. Encontrar palindromos ")
+        print("15. Comparar 2 llistes ")
+        print("16. Salir ")
         print("-------------------------")
         
 
@@ -98,7 +99,7 @@ def divi():
     print ("{} / {} = {}".format(n1, n2, s))
 
 def cdb():
-    numero = input("¿Que nuemro quieres convertir? ")
+    numero = input("¿Que numero quieres convertir? ")
     bini = int(input("¿En que base está el numero introducido anteriormente? (Base: 2 = binario | 8=octal | 10=decimal | 16=hexadecimal) "))
     bfin = int(input("¿A que base lo quieres convertir? (Base: 2 = binario | 8=octal | 10=decimal | 16=hexadecimal) "))
     
@@ -244,6 +245,29 @@ def palindrom():
         print("La palabra {} es palindroma".format(a))
     else:
         print("La palabra {} NO es palindroma".format(a))
+
+def superposicio():
+    def lista1(a):
+       i = []
+       while True:
+            o = input('Escribe valores a tu lista y pon "fin" para acabar: ')
+            if o.lower() == "fin":
+                break
+            i.append(o)
+            return i
+    def lista2(b):
+        y = []
+        while True:
+            o = input('Escribe valores a tu segunda lista y pon "fin" para acabar: ')
+            if o.lower() == "fin":
+                break
+            y.append(o)
+            return y
+    def compararlista():
+        p = str(i.split)
+        l = str(y.split)
+        return p in l        
+
 
 def error():
     print("-------------------------")
