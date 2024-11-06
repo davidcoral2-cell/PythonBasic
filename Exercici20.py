@@ -247,7 +247,7 @@ def palindrom():
         print("La palabra {} NO es palindroma".format(a))
 
 def superposicio():
-    def lista1(a):
+    def lista1():
        i = []
        while True:
             o = input('Escribe valores a tu lista y pon "fin" para acabar: ')
@@ -255,7 +255,7 @@ def superposicio():
                 break
             i.append(o)
             return i
-    def lista2(b):
+    def lista2():
         y = []
         while True:
             o = input('Escribe valores a tu segunda lista y pon "fin" para acabar: ')
@@ -263,9 +263,11 @@ def superposicio():
                 break
             y.append(o)
             return y
+    u = lista2()
+    t = lista1()
     def compararlista():
-        p = str(i.split)
-        l = str(y.split)
+        p = str(u.split)
+        l = str(t.split)
         return p in l        
 
 
