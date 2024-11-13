@@ -84,4 +84,124 @@ def ej11():
     kbr = kr[::-1]
     print(kbr)
 
-ej11()
+def ej12():
+    l=[]
+    for i in range(4):
+        l.append(int(input("Introduce un número: ")))
+    print(l)
+    suma = 0
+    for e in l:
+        suma = suma+e
+    print("La suma de la lista {} es {} ".format(l, suma))
+
+def ej13():
+    p=[]
+    a="1"
+    suma = 0
+    
+    while a!=".":
+        a =input("Introduce un numero o '.' para acabar: ")
+        if a != ".":
+            p.append(int(a))
+        else:
+            print("Adeu")
+
+    f = len(p)
+
+    for e in range(f):
+        suma = suma+ p[e]
+        
+    
+    print("La suma de la lista {} es {} y mide {} ".format(p, suma, f))
+
+# Leer lista de num. 
+
+def ej14():
+    def listanombres():
+        l = []
+        a = "0"
+        while a != ".":
+            a =input("Introduce un numero o '.' para acabar: ")
+            if a != ".":
+                l.append(int(a))
+            else:
+                print("Grácias por darme la lsita!")
+        return l
+    
+    def sumarlista(l):
+        suma = 0
+        for e in l:
+            suma = suma + e
+        return suma
+    
+    
+    p = listanombres()
+    s = sumarlista(p)
+    print("La lista es: {} ".format(p))
+    print("La suma de toda esa lista es de {} ".format(s))
+    print("La lista invertida es: {} ".format(p[::-1]))
+    print("Los 2 últimos numeros de tu lista son: {} ".format(p[-2:]))
+
+def ej15():
+    def listacaracters():
+        l = []
+        a = "0"
+        while a != ".":
+            a =input("Introduce un caracter o '.' para acabar: ")
+            if a != ".":
+                l.append(a)
+            else:
+                print("Grácias por darme la lsita!")
+        return l
+    lis = listacaracters()
+    cl = set(lis)
+    for i in cl:
+
+        y = lis.count(i)
+        print("En la lista: {} . El nuermo {} se repite {} veces ".format(lis,i, y))
+
+def ej16():
+    def listacaracters():
+        l = []
+        a = "0"
+        while a != ".":
+            a =input("Introduce un caracter o '.' para acabar: ")
+            if a != ".":
+                l.append(a)
+            else:
+                print("Grácias por darme la lsita!")
+        return l
+    lis = listacaracters()
+    cl = set(lis)
+    if len(lis) == len(cl):
+        print("No hay repetidas")
+    else:
+        print("Hay repetidas")
+    
+
+
+def ej17():
+    def listacaracters():
+        l = []
+        a = "0"
+        while a != ".":
+            a =input("Introduce un caracter o '.' para acabar: ")
+            if a != ".":
+                l.append(a)
+            else:
+                print("Grácias por darme la lsita!")
+        return l
+    lis = listacaracters()
+    cl = set(lis)
+    if len(lis) == len(cl):
+        print("No hay repetidas")
+    else:
+        print("Hay repetidas")
+    for e in cl:
+        if lis.count(str(e)) != 1:
+            print("{} Si está repetido!".format(e))
+        else: 
+            print("{} NO está repetido!".format(e))
+        
+
+ej17()
