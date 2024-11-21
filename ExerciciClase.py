@@ -202,6 +202,65 @@ def ej17():
             print("{} Si está repetido!".format(e))
         else: 
             print("{} NO está repetido!".format(e))
-        
 
-ej17()
+def ej18(): #Tuples
+    a = (1,2,6,7,3,5,"pito",)
+    print(a.count(1))
+    print("----------------------")
+    print(a.index(3,2))
+    print("----------------------")
+
+def ej19(): #Conjunts
+    a= {1,2,3,5,7,34,976,3123}
+    for e in a:
+        print(e)
+    print(len(a))
+
+def ej20(): #Diccionaris
+    a = {"p":"Pepe","v":"Victor","e3":{"awd":"wdawda","g":"dawd"}}
+    print(a["p"])
+    print(a["v"])
+    print("___________________________")
+    a["p"] = "Jose"
+    print(a["p"])
+    print("___________________________")
+    for e in a:
+        print('"{}" es igual a: {}'.format(e, a[e]))
+    print("__________________________-")
+    for x,y in a.items():
+        print(x,y)
+    print("_____________________")
+    print(a.get("e3"))
+    print("___________________________")
+    print(a.keys())
+    print("___________________________")
+    print(a.values())
+
+def ej21(): #Operadors
+    def matematics():
+        a = 12
+        b = 18
+        c = a%b #+, -, /, *, ** (Exponente), ///// Orden: (), **, * /, + -.
+        print(c)
+    def comparació():
+        a = input("Dime un número ")
+        b = int(input("Dime Otro número "))
+        if a == b:
+            print("SI")
+        else:
+            print("NO")
+        print("-----------------")
+        if int(a) == b:
+            print("Ahora si que si bby")
+        else:
+            print("Ahora tampoco")
+    
+    #Lógics. and, not, or, nor
+    
+    comparació()
+
+def ej22():
+    e = (3+(4*5))/7**4-27
+    print(e)
+
+ej22()
