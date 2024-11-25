@@ -1,7 +1,6 @@
-
 def menu():
     op=0
-    while op < 1 or op > 16:
+    while op < 1 or op > 18:
     
         print("-------------------------")
         print("1. Sumar" )
@@ -19,7 +18,8 @@ def menu():
         print("13. Invertir texto ")
         print("14. Encontrar palindromos ")
         print("15. Comparar 2 llistes ")
-        print("16. Salir ")
+        print("16. Repetir texto ")
+        print("17. Salir ")
         print("-------------------------")
         
 
@@ -281,9 +281,24 @@ def superposicio():
                     print("{} SE REPITE".format(n))
                 else:
                     print("No se repite NADA!")
-        
-    
 
+def repetir():
+    a = input("Dime el texto que quieres repetir ")
+    b = int(input("Cuantas veces lo quieres repetir? "))
+
+    print(a*b)
+        
+def puntos():
+    def crlist():
+        i1=list()
+        f = ""
+        u = 0
+        print("Vamos a crear tu lista de 3 numeros para ver cuantas veces repito los numeros. ")
+        while u!= 3:
+            f = input("Añade un numero a la lista. Pon un '.'")
+            i1.append(f)
+            u = u + 1
+        
 
        
 
@@ -330,6 +345,10 @@ while a:
         case 15:
             superposicio()
         case 16:
+            repetir()
+        case 17:
+            puntos()
+        case 18:
             print("Adios")
             a = False
         case _:
