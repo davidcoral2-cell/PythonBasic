@@ -440,10 +440,12 @@ def ej31():
         a = input("Dime una frase de máximo 80 caracteres: ")
         if len(a) <= 80 and a != ".":
             s=a.lower()
-             
-            l.append ()
+            p = s.title()
+            l.append(p)
     
     print(l)
+
+
 
 ej31()
 
