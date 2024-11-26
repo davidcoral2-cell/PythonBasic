@@ -263,4 +263,187 @@ def ej22():
     e = (3+(4*5))/7**4-27
     print(e)
 
-ej22()
+def ej23(): #Menú match
+    def mostramenu():
+        print("""Este es nuestro menú, estas son las opciones:
+              1. Sumar
+              2. restar
+              3. multiplicar
+              4. Dividir
+              5. Elevar
+              6. Saludar
+              7. Despedir
+              8. Chiste
+              9. Adivinanza
+              10. Alago 
+              11. Salir""")
+            
+        op = input("Que quieres hacer? (Numero) ")
+        return op
+
+    def suma():
+        k = int(input("Dime el primer numero a sumar: "))
+        l = int(input("Dime el segundo numero a sumar: "))
+        sum = k+l
+        print("{} + {} = {}".format(k, l, sum))        
+    def resta():
+        k = int(input("Dime el primer numero a restar: "))
+        l = int(input("Dime el segundo numero a restar: "))
+        sum = k-l
+        print("{} - {} = {}".format(k, l, sum))    
+    def multiplicar():
+        k = int(input("Dime el primer numero a multiplicar: "))
+        l = int(input("Dime el segundo numero a multiplicar: "))
+        sum = k*l
+        print("{} x {} = {}".format(k, l, sum))    
+
+    def elevar():
+        i = int(input("Dime la base a elevar: "))
+        o = int(input("Dime el exponente: "))
+        exp = i**o
+        print("{} elevado a {} es = {} ".format(i, o, exp)) 
+
+    def dividir():
+        k = int(input("Dime el primer numero a dividir: "))
+        l = int(input("Dime el segundo numero a dividir: "))
+        div = k/l
+        print("{} / {} = {}".format(k, l, div))
+
+    def saludar():
+        n = input("Como te llamas? ")
+        print("Hola, {}. Estoy muy feliz de que hayas venido <3 ")
+
+    def despedir():
+        n = input("Como te llamas? ")
+        print("Siento que te tengas que ir {} pero que te vaya bien! :) ".format(n)) 
+        
+    def chiste():
+        print("Te voy a contar un chiste, van tres en una moto, y con Harrison FORD :) ")
+
+    def adivinanza():
+        b = input("Oro parece, plata no es, ¿Que és?")
+        if b == "platano" or b == "Platano":
+            print("Has adivinado!")
+        else:
+            print("Oh no, has perdido, la respuesta era 'Platano'! ")
+
+    def alago():
+        print("Eres una persona preciosa, tu mirada es penetrante y tu aroma perfecto.")
+    a = ""
+    x = mostramenu()
+    
+    match(x):
+        case "1":
+            suma()
+        case "2":
+            resta()
+        case "3":
+            multiplicar()
+        case "4":
+            dividir()
+        case "5":
+            elevar()
+        case "6":
+            saludar()
+        case "7":
+            despedir()
+        case "8":
+            chiste()
+        case "9":
+            adivinanza()
+        case "10":
+            alago()
+        case "11":
+            print("Adeuuuu")
+        case _:
+            print("Opción no válida \n")
+
+
+def ej24():
+    a = 5
+    while(a<=15):
+        print(a)
+        a = a+1
+    print("Acabé ooooo")
+
+
+def ej25():
+    a = 10
+    while(a>=0):
+        print(a)
+        a-=1
+    print("UWU")
+
+def ej26():
+    a = list()
+    b = ""
+    while b != ".":
+        b = input("Dime una palabra de 4 letras, si no es de 4 no la agregaré. Pon un '.' para acabar ")
+        if b != "." and len(b) == 4:
+            a.append(b)
+        if len(a) == 4:
+            break
+    print("Tu lista es: {} ".format(a))
+
+def ej27():
+    a = list()
+    b = ""
+    while b != ":":
+        b = input("Dime una palabra que empiece por 'A', si no empieza por 'A' no la agregaré. Pon un ':' para acabar ")
+        if b != ":" and b[0]=="A":
+            a.append(b)
+    print("Tu lista es: {} ".format(a))
+
+def ej28():
+    a = list()
+    b = ""
+    while b != "?":
+        b = input("Dime una palabra para pasarla entera a minusculas. Pon un '?' para acabar ")
+        if b != "?":
+            a.append(b.lower())
+    print("Tu lista es: {} ".format(a))
+
+def ej29():
+    a = list()
+    b = ""
+    while b != "/":
+        b = input("Dime una palabra para pasarla entera a MAYUSCULAS. Pon un '/' para acabar ")
+        if b != "/":
+            a.append(b.upper())
+    print("Tu lista es: {} ".format(a))
+
+def ej30():
+    a = list()
+    b = ""
+    while b != "%":
+        b = input("Dime una palabra para pasarla entera a MAYUSCULAS. Pon un '%' para acabar ")
+        if b != "%":
+            a.append(b.title())
+    print("Tu lista es: {} ".format(a))
+
+def ej31():
+    l = list()
+    a = ""
+
+    while a != ".":
+        a = input("Dime una frase de máximo 80 caracteres: ")
+        if len(a) <= 80 and a != ".":
+            l.append(a.title())
+    
+    print(l)
+
+def ej31():
+    l = list()
+    a = ""
+
+    while a != ".":
+        a = input("Dime una frase de máximo 80 caracteres: ")
+        if len(a) <= 80 and a != ".":
+            s=a.lower()
+             
+            l.append ()
+    
+    print(l)
+
+ej31()
+
