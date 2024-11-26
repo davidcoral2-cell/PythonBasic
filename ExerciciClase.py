@@ -445,7 +445,34 @@ def ej31():
     
     print(l)
 
+def ej32():
+    def hacerlista():
+        l=[]
+        p=""
+        while p != ".":
+            p = input("Dime un número ")
+            if p != ".":
+                l.append(int(p))
+        return l
+    
+    l = hacerlista()
+    r = list()
+    for i,e in enumerate(l):
+        if e == i:
+            r.append(e)
+    print(r)
+            
+def ej33():
+    def hacerlista():
+        l=[]
+        p=""
+        while p != ".":
+            p = input("Dime un número ")
+            if p != ".":
+                l.append(int(p))
+        return l
+    
+    l = hacerlista()
 
-
-ej31()
+ej32()
 
