@@ -474,5 +474,77 @@ def ej33():
     
     l = hacerlista()
 
-ej32()
+def ej34():
+    
+    def sumarlista(l):
+        for i in range (len(l)):
+            l[i]*=3
+
+    l = [3,4,5]
+    print(l)
+    sumarlista(l)
+    print(l)
+
+def ej35():
+    def sumarl(l):
+        ls=[]
+        for e in l:
+            e = e+5
+            ls.append(e)
+        return ls
+
+    l = [2,3,4 ]
+    print(l)
+    s = sumarl(l)
+    print("La lista modificada es  {} y sin modificar {}".format(s,l))
+
+def ej36():
+    l = [3,4,5,7,10]
+    r = list(map(lambda x: x*2, l))
+    print(r)
+
+def ej37():
+    def aaa(x):
+        return x**5
+    
+    l = [3,4,5,7,10]
+
+    k = list(map(lambda x: aaa(x), l))
+    print(k)
+
+    r = list(map(lambda x: x**5, l))
+    print(r)
+
+    m = list()
+    for e in l:
+        m.append(e**5)
+    print(m)
+
+def ej38():
+    l = [3,4,5,7,10]
+    def sino(x):
+        if x%2==0:
+            return True
+        return False
+    a = list(filter(sino,l))
+    print(a)
+
+    r = list(filter(lambda x: x%2!=0,l))
+
+    print(r)
+
+def ej39():
+    n = int(input('Dime un numero: '))
+    def fact(n):
+        if n <= 0:
+            return 1
+        else:
+            return n*fact(n-1)
+    print(fact(n))
+
+    
+
+
+
+ej39()
 
