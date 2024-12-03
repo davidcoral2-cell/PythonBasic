@@ -1,3 +1,7 @@
+from functools import reduce
+
+
+
 def ej1():
     a = "Hola"
     b = input("Di alguna palabra ")
@@ -542,9 +546,42 @@ def ej39():
             return n*fact(n-1)
     print(fact(n))
 
-    
+def ej40():
+
+    l=[2,5,6,123,754,864]
+    j=[1,3,65,8566,45,3]
+
+    x = reduce(lambda x,y:x+y, l)
+    h = reduce(lambda x,y:x*y, j)
+
+    print("{} ||||| {} ".format(x, h))
+
+def ej41():
+
+    def crearlista():
+        l = list()
+        par = ""
+        while par != ".":
+            par = input("Dime una palabra, pon un '.' para acabar: ")
+            if par != ".":
+                l.append(par)
+        return l
+    def pasarpunto(l):
+        voc = ["aeiouáéíóúàèìòùäëïöü"]
+        for e in l: 
+            if e in voc:
+                e == "."
+        return e
+    l = []
+    l = crearlista()
+    pasarpunto(l)
+    print(pasarpunto(l))
 
 
 
-ej39()
+
+
+
+
+ej41()
 

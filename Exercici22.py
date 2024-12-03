@@ -1,8 +1,15 @@
-def gran_lista(l):
-    for e in l:
-
-        return max(e)
-
-l = [2,4,5,6,10]
-gran_lista(l)
-print(l)
+       
+def puntos():
+    i1=list()
+    f = ""
+    u = "."
+    n = 0
+    print("Vamos a crear tu lista de 3 numeros para ver cuantas veces repito los numeros. ")
+    while n!= 3:
+        f = input("Añade un numero a la lista. Pon un '.' ")
+        i1.append(int(f))
+        n += 1
+    for e in i1:
+        print(u*e)
+    
+puntos()
