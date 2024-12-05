@@ -10,4 +10,4 @@ for _ in range(4):
 print("Any actual{}".format(anyoactual))
 print("Nom         \tData naixement\tAnys que farà aquest any")
 for nombre, anyodenacimiento, edad in datos:
-    print(f"{nombre:<12}\t{anyodenacimiento:<15}\t{edad}")
+    print("{}\t{}\t{}".format(nombre, anyodenacimiento, edad))
