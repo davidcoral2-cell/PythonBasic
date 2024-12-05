@@ -558,30 +558,81 @@ def ej40():
 
 def ej41():
 
+    s = input("Una cadena de caracteres ")
+    l=list(s)
+    r = []
+    for e in l:
+        if e in "aeiouAEIOUáéíóúàèìòùäöëïüÄËÏÖÜ":
+            r.append(".")
+        else:
+            r.append(e)
+    s = " ".join(r)
+    print(s)
+
+def ej42():
+    s = input("Una cadena de caracteres ")
+    l=list(s)
+    r = []
+    for e in l:
+        if e in "AQWSZXCDERFVBGTYHNMJUIKLOPÑÇ":
+            r.append(".")
+        else:
+            r.append(e)
+    s = " ".join(r)
+    print(s)
+
+def ej43():
+    
+    s = input("Una cadena de caracteres ")
+    l=list(s)
+    r = []
+    for e in l:
+        if e in "QWSZXCDRFVBGTYHNMJKLPÑÇ":
+            r.append("-")
+        elif e in "aeiouAEIOUáéíóúàèìòùäöëïüÄËÏÖÜ":
+            r.append(".")
+        else:
+            r.append(e)
+    s = " ".join(r)
+    print(s)
+
+def ej44():
     def crearlista():
-        l = list()
+        l = []
         par = ""
         while par != ".":
             par = input("Dime una palabra, pon un '.' para acabar: ")
             if par != ".":
                 l.append(par)
         return l
-    def pasarpunto(l):
-        voc = ["aeiouáéíóúàèìòùäëïöü"]
-        for e in l: 
-            if e in voc:
-                e == "."
-        return e
-    l = []
+
+    def paraules(l):
+        a = []
+        c = []
+        for e in l:
+            a.append(len(e))
+        b = set(a)
+        a.clear()
+        for e in b:
+            y = len(list(filter(lambda x:x==e,a)))
+            c.append([e, y])
+        return c
+
     l = crearlista()
-    pasarpunto(l)
-    print(pasarpunto(l))
+    p = paraules(l)
+    print("En la lista {} Se repiten: {}".format(l, p))
+
+def ej45():
+    a = "adwawdahoijoduiawidohdp"
+    b = a.split()
+    print(b)
+
+    
 
 
 
 
 
 
-
-ej41()
+ej45()
 

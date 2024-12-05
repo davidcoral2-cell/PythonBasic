@@ -7,4 +7,17 @@ def crearlista():
             l.append(par)
     return l
 
-a = int(input("Cuantas letras mínimas tiene que tener la palabra para poder pasar el filtro?"))
+def filtro(x, y):
+    g = list()
+    for e in x:
+        if y <= len(e):
+            g.append(e)
+    return g
+
+
+x = crearlista()
+y = int(input("De cuantas letras debe ser el filtro? "))
+k = filtro(x, y)
+
+filtro(x, y)
+print("de la lista {} que tenguin més de {} carácters, són: {}".format(x, y, k))
