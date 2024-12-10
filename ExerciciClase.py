@@ -627,12 +627,84 @@ def ej45():
     b = a.split()
     print(b)
 
-    
+def ej46():
+    def crearlista():
+        l = []
+        par = ""
+        while par != ".":
+            par = input("Dime una palabra, pon un '.' para acabar: ")
+            if par != ".":
+                l.append(par)
+        return l
+    def mostrar(t, min, max):
+        print("Els números entre aquests 2 son: {}".format(list(filter(lambda x: x>min and x<max,t))))
+
+    crearlista()   
+
+def ej47():
+    def crearlista():
+        l = []
+        par = ""
+        while par != ".":
+            par = input("Dime un nombre, pon un '.' para acabar: ")
+            if par != ".":
+                l.append(par)
+        return l
+
+
+    def nums_que_comencen_per(l):
+        r = []
+        for e in l:
+            if len(e) % 2== 1:
+                m = len(e)//2
+                r.append(e[m])
+            else:
+                m = len(e)//2
+                m2 = m-1
+                r.append(e[m2]+e[m])
+                
+        print("De tu lista {}, los que comienzan por són: {}. Estos en total són {} nombres. ".format(l, r, len(r)))
+
+    l = crearlista()
+    nums_que_comencen_per(l)
+ 
+def ej47():
+    def crearlista():
+        l = []
+        par = ""
+        while par != ".":
+            par = input("Dime un nombre, pon un '.' para acabar: ")
+            if par != ".":
+                l.append(par)
+        return l
+
+
+    def nums_que_comencen_per(l):
+        def comparar(e,l):
+             
+             e and l
+        def comparar2(e1, e2, l):
+          aaa = "a"  
+        
+        r = []
+        for e in l:
+            senar = len(e) % 2 == 1
+            if senar:
+                comparar(e[len(e)//2],*l.remove(e))
+            else:
+                comparar2(e[len(e)//2], e[len(e)//2 +1], + l.remove(e))
+        
+                       
+                
+        print("De tu lista {}, los que comienzan por són: {}. Estos en total són {} nombres. ".format(l, r, len(r)))
+
+    l = crearlista()
+    nums_que_comencen_per(l)
 
 
 
 
 
 
-ej18()
+ej47()
 
